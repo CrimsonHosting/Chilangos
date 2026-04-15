@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Chilangos — Authentic Mexico City Flavor | Kenner, LA</title>
+<title>Chilangos — Authentic Mexican Flavor | Kenner, LA</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Outfit:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet"/>
 <style>
 /* ════════════════════════════════════════
@@ -280,6 +280,7 @@ a{text-decoration:none;color:inherit;}
    MENU SECTION
 ════════════════════════════════════════ */
 .menu-section{
+  display:none;
   background:var(--dark);
   padding:100px 56px;
   position:relative;
@@ -567,7 +568,7 @@ footer{
   padding:56px 56px 32px;
   border-top:1px solid rgba(201,168,76,.12);
   display:grid;
-  grid-template-columns:1.6fr 1fr 1fr 1fr;
+  grid-template-columns:1fr 1fr 1fr;
   gap:40px;
 }
 .footer-brand .brand-logo{
@@ -608,7 +609,23 @@ footer{
   display:flex;justify-content:space-between;
   font-size:.68rem;color:rgba(245,237,214,.25);letter-spacing:.06em;
 }
+.footer-brand {
+  grid-column: 2;
+  text-align: center;
+  align-items: center;
+}
 
+.footer-social {
+  justify-content: center;
+}
+
+.footer-brand .brand-logo {
+  justify-content: center;
+}
+
+.footer-brand p {
+  margin: 0 auto;
+}
 /* ════════════════════════════════════════
    ANIMATIONS
 ════════════════════════════════════════ */
@@ -661,17 +678,17 @@ footer{
   <a href="#" class="nav-logo">
     <div class="nav-logo-text">
       <span class="name">Chilangos</span>
-      <span class="tagline">Mexico City · Kenner, LA</span>
+      <span class="tagline">Kenner, LA</span>
     </div>
   </a>
   <ul class="nav-links">
     <li><a href="#about">Our Story</a></li>
-    <li><a href="#menu">Menu</a></li>
+    <li><a href="#full-menu">Menu</a></li>
     <li><a href="#full-menu">Full Menu</a></li>
     <li><a href="#gallery">Gallery</a></li>
     <li><a href="#location">Visit Us</a></li>
   </ul>
-  <a href="#menu" class="nav-cta">View Menu</a>
+  <a href="#full-menu" class="nav-cta">View Menu</a>
 </nav>
 
 <!-- ═══════════ HERO ═══════════ -->
@@ -680,11 +697,11 @@ footer{
   <div class="hero-overlay"></div>
   <div class="hero-stripe"></div>
   <div class="hero-content">
-    <span class="hero-eyebrow">Kenner, Louisiana · Est. in the Spirit of Mexico City</span>
+    <span class="hero-eyebrow">Kenner, Louisiana · Est. XXXX</span>
     <h1 class="hero-title">CHILAN<span>GOS</span></h1>
-    <p class="hero-subtitle">Authentic Mexico City Flavor<br>in the Heart of New Orleans</p>
+    <p class="hero-subtitle">Authentic Mexican cuisine<br>in the Heart of New Orleans</p>
     <div class="hero-actions">
-      <a href="#menu" class="btn-fill">Explore the Menu</a>
+      <a href="#full-menu" class="btn-fill">Explore the Menu</a>
       <a href="#location" class="btn-outline">Find Us</a>
     </div>
   </div>
@@ -726,16 +743,16 @@ footer{
   </div>
   <div class="about-body reveal">
     <span class="section-chip">Our Story</span>
-    <h2>Born in <em>Mexico City</em>,<br>raised in New Orleans.</h2>
+    <h2>Mexican at <em>Heart</em>,<br>New Orleans in soul</h2>
     <p>
-      Chilangos brings the soul of CDMX street food to the streets of Kenner, Louisiana.
-      We're named after the proud people of Mexico City — the Chilangos — who carry
-      a deep culinary tradition wherever they go.
+     Chilangos brings bold, Mexican-inspired street food to the heart of Kenner, Louisiana.
+     Rooted in rich culinary traditions and reimagined with local flavor, our food 
+     celebrates the vibrant spirit of Mexican cuisine without being tied to just one region.
     </p>
     <p>
-      From the bustling taquerías of La Condesa to the mariscos stalls of Tepito,
-      every dish on our menu is a love letter to authentic Mexico City cooking.
-      Now seasoned with New Orleans spirit — bold, unapologetic, and full of flavor.
+      Every dish on our menu is crafted with authentic techniques, fresh ingredients, 
+      and a passion for flavor. Blending Mexican inspiration with New Orleans energy, 
+      Chilangos delivers a unique experience bold, unapologetic, and full of flavor.
     </p>
     <div class="about-stats">
       <div class="stat-item">
@@ -743,8 +760,8 @@ footer{
         <span class="stat-label">Authentic Recipes</span>
       </div>
       <div class="stat-item">
-        <span class="stat-num">CDMX</span>
-        <span class="stat-label">Mexico City Roots</span>
+        <span class="stat-num">BOLD</span>
+        <span class="stat-label">Unapologetic Flavor</span>
       </div>
       <div class="stat-item">
         <span class="stat-num">NOLA</span>
@@ -826,7 +843,7 @@ footer{
 <section class="gallery" id="gallery">
   <div class="gallery-header reveal">
     <h2>FRESH FROM <span>THE KITCHEN</span></h2>
-    <p>Every plate a masterpiece — every bite a trip to Mexico City</p>
+    <p>Made with love - inspired by Mexico, served in Kenner, Louisiana.</p>
   </div>
   <div class="gallery-grid">
 
@@ -1001,7 +1018,7 @@ footer{
 
   <div class="fm-header reveal">
     <h2>THE FULL <span>MENU</span></h2>
-    <p>Every dish made with love — straight from Mexico City to Kenner, Louisiana</p>
+    <p>Straight off the grill. Straight to you.</p>
   </div>
 
   <div class="fm-tabs reveal">
@@ -1819,7 +1836,7 @@ function fmTab(id, btn) {
       </div>
       <h3>Kenner, Louisiana</h3>
       <p>Serving the Greater New Orleans area<br>with love since day one.</p>
-      <a href="https://maps.google.com/?q=Chilangos+Kenner+Louisiana" target="_blank" class="map-link">
+      <a class="map-link" href="https://www.google.com/maps/dir//Chilangos+Restaurant,+2633+Williams+Blvd,+Kenner,+LA+70062/@30.0134556,-90.2506388,15z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x8620b730928c4d97:0x49f79f9e783e605!2m2!1d-90.2410454!2d30.0046056!3e3?entry=ttu&g_ep=EgoyMDI2MDQxMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noreferrer">
         Get Directions →
       </a>
     </div>
@@ -1860,15 +1877,15 @@ function fmTab(id, btn) {
     <div class="contact-bar">
       <div class="contact-item">
         <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        Kenner, Louisiana (New Orleans Area)
+        2633 Williams Blvd<br>Kenner, LA 70062
       </div>
       <div class="contact-item">
         <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.42 2 2 0 0 1 3.58 1.24h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        Call for daily specials & catering
+        (504) 469-5599
       </div>
       <div class="contact-item">
         <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-        @chilangos.kenner
+        @chilangosnola
       </div>
     </div>
   </div>
@@ -1883,21 +1900,24 @@ function fmTab(id, btn) {
       Come Experience
       <span>Chilangos</span>
     </h2>
-    <p>Where Mexico City meets New Orleans — one taco at a time.</p>
+    <p>Where Mexican flavor meets New Orleans - one taco at a time.</p>
     <div class="cta-btns">
-      <a href="https://maps.google.com/?q=Chilangos+Kenner+Louisiana" target="_blank" class="btn-fill">Get Directions</a>
-      <a href="#menu" class="btn-outline" style="color:#fff;border-color:rgba(255,255,255,.4);">View Menu</a>
+      <a href="https://www.google.com/maps/dir//Chilangos+Restaurant,+2633+Williams+Blvd,+Kenner,+LA+70062/@30.0134556,-90.2506388,15z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x8620b730928c4d97:0x49f79f9e783e605!2m2!1d-90.2410454!2d30.0046056!3e3?entry=ttu&g_ep=EgoyMDI2MDQxMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn-fill">Get Directions</a>
+      <a href="#full-menu" class="btn-outline" style="color:#fff;border-color:rgba(255,255,255,.4);">View Menu</a>
     </div>
   </div>
 </section>
 
 <!-- ═══════════ FOOTER ═══════════ -->
+
 <footer>
+  <div> </div>
   <div class="footer-brand">
+    
     <div class="brand-logo">
       <span class="name">Chilangos</span>
     </div>
-    <p>Authentic Mexico City flavor in the heart of Kenner, Louisiana. Come for the tacos, stay for the family.</p>
+    <p>Authentic Mexican Cuisine in the heart of Kenner, Louisiana. Come for the tacos, stay for the family.</p>
     <div class="footer-social">
       <a href="#" class="soc-btn" title="Instagram">
         <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
@@ -1905,17 +1925,20 @@ function fmTab(id, btn) {
       <a href="#" class="soc-btn" title="Facebook">
         <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
       </a>
+      <a href="#" class="soc-btn" title="Facebook">
+        <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      </a>
     </div>
   </div>
   <div class="footer-col">
-    <h4>Menu</h4>
+ <!--   <h4>Menu</h4>
     <ul>
-      <li><a href="#menu">Tacos</a></li>
-      <li><a href="#menu">Enchiladas</a></li>
-      <li><a href="#menu">Mariscos</a></li>
-      <li><a href="#menu">Caldos</a></li>
-      <li><a href="#menu">Tortas</a></li>
-      <li><a href="#menu">Daily Specials</a></li>
+      <li><a href="#full-menu">Tacos</a></li>
+      <li><a href="#full-menu">Enchiladas</a></li>
+      <li><a href="#full-menu">Mariscos</a></li>
+      <li><a href="#full-menu">Caldos</a></li>
+      <li><a href="#full-menu">Tortas</a></li>
+      <li><a href="#full-menu">Daily Specials</a></li>
     </ul>
   </div>
   <div class="footer-col">
@@ -1926,6 +1949,7 @@ function fmTab(id, btn) {
       <li><a href="#location">Hours & Location</a></li>
     </ul>
   </div>
+  
   <div class="footer-col">
     <h4>Find Us</h4>
     <address>
@@ -1934,13 +1958,16 @@ function fmTab(id, btn) {
       Mon–Thu: 10am – 9pm<br>
       Fri–Sat: 10am – 10pm<br>
       Sun: 9am – 8pm<br><br>
-      <a href="https://www.instagram.com/chilangos.kenner" target="_blank" style="color:var(--gold);">@chilangos.kenner</a>
+      <a href="https://www.instagram.com/chilangosnola/" target="_blank" style="color:var(--gold);">@chilangosnola</a>
     </address>
+  -->
   </div>
+  
   <div class="footer-bottom">
-    <span>© 2025 Chilangos. All rights reserved. Kenner, Louisiana.</span>
-    <span>Hecho con ♥ en CDMX · NOLA</span>
+    <span>© 2026 Chilangos. All rights reserved. Kenner, Louisiana.</span>
+  
   </div>
+  
 </footer>
 
 <script>
@@ -1955,6 +1982,21 @@ const observer = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
 }, { threshold: 0.08 });
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Remove the old preview menu block and keep all full-menu prices as placeholders.
+document.getElementById('menu')?.remove();
+document.querySelectorAll('#full-menu .fm-item').forEach(item => {
+  let price = item.querySelector('.fm-item-price');
+  if (!price) {
+    price = document.createElement('div');
+    price.className = 'fm-item-price';
+    item.appendChild(price);
+  }
+  price.textContent = '$XX';
+});
+document.querySelectorAll('#full-menu .t-price').forEach(price => {
+  price.textContent = '$XX';
+});
 
 // ── Highlight today's hours dynamically
 const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
