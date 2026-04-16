@@ -3,7 +3,9 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Chilangos — Authentic Mexican Flavor | Kenner, LA</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico"/>
+<link rel="icon" type="image/png" href="logo.png"/>
+<title>Chilangos</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Outfit:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet"/>
 <style>
 /* ════════════════════════════════════════
@@ -100,7 +102,7 @@ a{text-decoration:none;color:inherit;}
   position:relative;height:100vh;min-height:680px;
   display:flex;align-items:center;justify-content:center;
   overflow:hidden;
-  clip-path:polygon(0 0,100% 0,100% 92%,0 100%);
+  clip-path:none;
 }
 .hero-bg{
   position:absolute;inset:0;
@@ -697,7 +699,7 @@ footer{
   <div class="hero-overlay"></div>
   <div class="hero-stripe"></div>
   <div class="hero-content">
-    <span class="hero-eyebrow">Kenner, Louisiana · Est. XXXX</span>
+    <span class="hero-eyebrow">Kenner, Louisiana · Est. 2007</span>
     <h1 class="hero-title">CHILAN<span>GOS</span></h1>
     <p class="hero-subtitle">Authentic Mexican cuisine<br>in the Heart of New Orleans</p>
     <div class="hero-actions">
@@ -1023,15 +1025,13 @@ footer{
 
   <div class="fm-tabs reveal">
     <button class="fm-tab fm-active" onclick="fmTab('appetizers',this)">Appetizers</button>
-    <button class="fm-tab" onclick="fmTab('taquera',this)">Taquería</button>
+    <button class="fm-tab" onclick="fmTab('breakfast',this)">Breakfast</button>
     <button class="fm-tab" onclick="fmTab('fajitas',this)">Fajitas</button>
     <button class="fm-tab" onclick="fmTab('plates',this)">Plates</button>
-    <button class="fm-tab" onclick="fmTab('mariscos',this)">Mariscos</button>
-    <button class="fm-tab" onclick="fmTab('soups',this)">Soups & Caldos</button>
-    <button class="fm-tab" onclick="fmTab('specials',this)">Weekend & Breakfast</button>
-    <button class="fm-tab" onclick="fmTab('tuesday',this)">Taco Tuesday</button>
-    <button class="fm-tab" onclick="fmTab('kids',this)">Kids & Sides</button>
-    <button class="fm-tab" onclick="fmTab('desserts',this)">Postres</button>
+    <button class="fm-tab" onclick="fmTab('seafood',this)">Seafood</button>
+    <button class="fm-tab" onclick="fmTab('soups',this)">Soups</button>
+    <button class="fm-tab" onclick="fmTab('lunch',this)">Lunch</button>
+    <button class="fm-tab" onclick="fmTab('extras',this)">Extras</button>
   </div>
 
   <!-- APPETIZERS -->
@@ -1042,217 +1042,118 @@ footer{
         <div class="fm-item">
           <div class="fm-item-info">
             <div class="fm-item-name">Chilangos Sampler</div>
-            <div class="fm-item-desc">2 mini cheese quesadillas, 2 mini chicken flautas, 1 tostada with beans & cheese</div>
+            <div class="fm-item-desc">2 mini cheese quesadilla, 2 mini chicken flautas, 1 tostada with beans &amp; cheese</div>
           </div>
+          <div class="fm-item-price">$12.00</div>
         </div>
         <div class="fm-item">
           <div class="fm-item-info">
             <div class="fm-item-name">Nachos Chilangos</div>
-            <div class="fm-item-desc">Choice of meat, refried beans, mozzarella cheese, sour cream, pico de gallo & guacamole</div>
+            <div class="fm-item-desc">Choice of meat, refried beans, mozzarella cheese, sour cream, pico de gallo &amp; guacamole</div>
           </div>
+          <div class="fm-item-price">$12.00</div>
         </div>
         <div class="fm-item">
           <div class="fm-item-info">
             <div class="fm-item-name">Guacamole Chilangos</div>
             <div class="fm-item-desc">Mashed avocado and pico de gallo</div>
           </div>
+          <div class="fm-item-price">$8.00</div>
         </div>
         <div class="fm-item">
           <div class="fm-item-info">
             <div class="fm-item-name">Boquita Plate</div>
-            <div class="fm-item-desc">Beef, fresh cheese, wiener rolls, 2 shrimp & chicken flautas</div>
+            <div class="fm-item-desc">Beef, fresh cheese, wiener rolls, 2 shrimp &amp; chicken flautas</div>
           </div>
+          <div class="fm-item-price">$16.00</div>
         </div>
         <div class="fm-item">
           <div class="fm-item-info">
             <div class="fm-item-name">Queso Dip</div>
           </div>
+          <div class="fm-item-price">$6.00</div>
         </div>
         <div class="fm-item">
           <div class="fm-item-info">
-            <div class="fm-item-name">Guacamole (To-Go)</div>
+            <div class="fm-item-name">Trio Dip</div>
+            <div class="fm-item-desc">Cheese, guacamole and beans</div>
           </div>
+          <div class="fm-item-price">$10.00</div>
+        </div>
+        <div class="fm-item">
+          <div class="fm-item-info">
+            <div class="fm-item-name">Choriqueso</div>
+          </div>
+          <div class="fm-item-price">$8.00</div>
         </div>
       </div>
     </div>
     <div class="fm-cat">
-      <div class="fm-cat-title">Appetizer / Sampler Bites</div>
-      <div class="fm-items">
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Mini Cheese Quesadilla</div>
-            <div class="fm-item-desc">2 pieces</div>
-          </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Mini Chicken Flautas</div>
-            <div class="fm-item-desc">2 pieces</div>
-          </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Chimichangas</div>
-            <div class="fm-item-desc">2 pieces</div>
-          </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Guacamole</div>
-          </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Mini Tostadas de Frijoles y Queso</div>
-            <div class="fm-item-desc">Ground beans and cheese — 1 piece</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="fm-cat">
-      <div class="fm-cat-title">Soup & Salads</div>
+      <div class="fm-cat-title">Salads</div>
       <div class="fm-items">
         <div class="fm-item">
           <div class="fm-item-info">
             <div class="fm-item-name">Chicken Salad</div>
             <div class="fm-item-desc">Grilled chicken breast, lettuce, pico de gallo, and avocado</div>
           </div>
+          <div class="fm-item-price">$13.00</div>
         </div>
         <div class="fm-item">
           <div class="fm-item-info">
-            <div class="fm-item-name">Tortilla Soup</div>
+            <div class="fm-item-name">Taco Salad (Beef or Shrimp)</div>
           </div>
+          <div class="fm-item-price">$14.00</div>
         </div>
         <div class="fm-item">
           <div class="fm-item-info">
-            <div class="fm-item-name">Chicken Taco Salad</div>
-            <div class="fm-item-desc">Served in a taco shell with lettuce, guacamole, sour cream & pico de gallo with a touch of beans</div>
+            <div class="fm-item-name">Taco Salad (Chicken)</div>
           </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Steak Taco Salad</div>
-            <div class="fm-item-desc">Served in a taco shell with lettuce, guacamole, sour cream & pico de gallo with a touch of beans</div>
-          </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Shrimp Taco Salad</div>
-            <div class="fm-item-desc">Served in a taco shell with lettuce, guacamole, sour cream & pico de gallo with a touch of beans</div>
-          </div>
+          <div class="fm-item-price">$12.00</div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- TAQUERÍA -->
-  <div class="fm-panel" id="fm-taquera">
+  <!-- BREAKFAST -->
+  <div class="fm-panel" id="fm-breakfast">
     <div class="fm-cat">
-      <div class="fm-cat-title">Sección Taquera</div>
+      <div class="fm-cat-title">Breakfast</div>
       <div class="fm-items">
         <div class="fm-item">
           <div class="fm-item-info">
-            <div class="fm-item-name">5 Tacos on Corn Tortilla</div>
-            <div class="fm-item-desc">Served with onions & cilantro</div>
+            <div class="fm-item-name">Huevos Rancheros</div>
+            <div class="fm-item-desc">Two eggs on two tostadas topped with ranchero sauce and beans</div>
           </div>
+          <div class="fm-item-price">$9.00</div>
         </div>
         <div class="fm-item">
           <div class="fm-item-info">
-            <div class="fm-item-name">2 Mexican Sopes</div>
-            <div class="fm-item-desc">Corn dough with meat, beans, lettuce, sour cream, avocado, cheese</div>
+            <div class="fm-item-name">Huevos a la Mexicana</div>
+            <div class="fm-item-desc">Scrambled eggs with tomatoes, onions and pepper, beans, and tortillas</div>
           </div>
+          <div class="fm-item-price">$9.00</div>
         </div>
         <div class="fm-item">
           <div class="fm-item-info">
-            <div class="fm-item-name">Big Flour Burrito</div>
-            <div class="fm-item-desc">Stuffed with your choice of meat, pico de gallo, avocado, cheese, lettuce</div>
+            <div class="fm-item-name">Chilaquiles con Bistek</div>
+            <div class="fm-item-desc">Fried tortillas topped with tomatillo sauce, cheese, egg on top, toasted bread &amp; beans</div>
           </div>
+          <div class="fm-item-price">$16.00</div>
         </div>
         <div class="fm-item">
           <div class="fm-item-info">
-            <div class="fm-item-name">Big Quesadilla</div>
-            <div class="fm-item-desc">Flour tortilla filled with mozzarella cheese</div>
+            <div class="fm-item-name">Huevos Rancheros con Bistek</div>
+            <div class="fm-item-desc">Two eggs on two tostadas topped with ranchero sauce, beans, avocado &amp; fresh cheese</div>
           </div>
+          <div class="fm-item-price">$16.00</div>
         </div>
         <div class="fm-item">
           <div class="fm-item-info">
-            <div class="fm-item-name">2 Tostadas</div>
-            <div class="fm-item-desc">Served with your choice of meat, pico de gallo, beans, avocado, cheese</div>
+            <div class="fm-item-name">Cena Campesina</div>
+            <div class="fm-item-desc">Grilled steak with 2 eggs, plantains, fresh cheese, avocado and beans</div>
           </div>
+          <div class="fm-item-price">$16.00</div>
         </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Torta Mexicana</div>
-            <div class="fm-item-desc">Pork, ham, cheese, breaded beef, pico de gallo, avocado</div>
-          </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Torta Hawaiana</div>
-            <div class="fm-item-desc">Ham, pineapple, mozzarella cheese, pico de gallo, avocado, lettuce</div>
-          </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Huaraches</div>
-            <div class="fm-item-desc">Fried corn dough with refried beans, choice of meat, onions, cilantro, pico de gallo, sour cream, avocado, topped with green tomatillo sauce</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="fm-cat">
-      <div class="fm-cat-title">Xica Cena</div>
-      <div class="fm-items">
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Orden de Tacos</div>
-            <div class="fm-item-desc">Five soft tacos served on corn tortilla with cilantro and onion</div>
-          </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Orden de Tacos — Pescado o Camarón</div>
-            <div class="fm-item-desc">Four soft fish or shrimp tacos on corn tortilla with cilantro and onion</div>
-          </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Tacos Birria Chilangos</div>
-            <div class="fm-item-desc">Three brisket tacos grilled with cheese, topped with sauce</div>
-          </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Sopes</div>
-            <div class="fm-item-desc">Two corn doughs with any choice of meat, beans, lettuce, sour cream, avocado, cheese & pico de gallo</div>
-          </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Burrito</div>
-            <div class="fm-item-desc">Big flour tortilla stuffed with any choice of meat, beans, rice, pico de gallo, sour cream & cheese</div>
-          </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Quesadilla</div>
-            <div class="fm-item-desc">Big flour tortilla with mozzarella cheese, any choice of meat, rice, pico de gallo & lettuce</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="fm-cat">
-      <div class="fm-cat-title">Tacos Individuales</div>
-      <div class="fm-items">
-        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Asada</div><div class="fm-item-desc">Beef</div></div></div>
-        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Lengua</div><div class="fm-item-desc">Tongue</div></div></div>
-        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Tripa</div><div class="fm-item-desc">Tripe</div></div></div>
-        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Pastor</div><div class="fm-item-desc">Roasted pork</div></div></div>
-        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Pollo</div><div class="fm-item-desc">Shredded chicken</div></div></div>
-        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Carnitas</div><div class="fm-item-desc">Fried pork</div></div></div>
-        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Birria</div><div class="fm-item-desc">Slow-cooked brisket</div></div></div>
-        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Chicharrón</div><div class="fm-item-desc">Crackling</div></div></div>
-        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Barbacoa</div><div class="fm-item-desc">Beef cheek</div></div></div>
       </div>
     </div>
   </div>
@@ -1264,74 +1165,42 @@ footer{
       <div class="fm-items">
         <div class="fm-item">
           <div class="fm-item-info">
-            <div class="fm-item-name">Fajita Oaxaqueña</div>
-            <div class="fm-item-desc">Beef, chicken & shrimp topped with mozzarella cheese, served with beans, rice & salad</div>
+            <div class="fm-item-name">Fajitas Suprema (Dinner for 2)</div>
+            <div class="fm-item-desc">Beef, chicken, pork &amp; skewered shrimp served with beans, rice &amp; salad</div>
           </div>
+          <div class="fm-item-price">$45.00</div>
+        </div>
+        <div class="fm-item">
+          <div class="fm-item-info">
+            <div class="fm-item-name">Fajita Oaxaquena</div>
+            <div class="fm-item-desc">Beef, chicken &amp; shrimp topped with mozzarella cheese, served with beans, rice &amp; salad</div>
+          </div>
+          <div class="fm-item-price">$20.00</div>
         </div>
         <div class="fm-item">
           <div class="fm-item-info">
             <div class="fm-item-name">Fajita Mixta</div>
-            <div class="fm-item-desc">Beef, chicken & shrimp served with beans, rice & salad</div>
+            <div class="fm-item-desc">Beef, chicken &amp; shrimp served with beans, rice &amp; salad</div>
           </div>
+          <div class="fm-item-price">$18.00</div>
         </div>
         <div class="fm-item">
           <div class="fm-item-info">
             <div class="fm-item-name">Beef Fajita</div>
           </div>
+          <div class="fm-item-price">$16.00</div>
         </div>
         <div class="fm-item">
           <div class="fm-item-info">
             <div class="fm-item-name">Chicken Fajita</div>
           </div>
+          <div class="fm-item-price">$14.00</div>
         </div>
         <div class="fm-item">
           <div class="fm-item-info">
             <div class="fm-item-name">Shrimp Fajita</div>
           </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Fajitas Suprema — Dinner for 2</div>
-            <div class="fm-item-desc">Beef, chicken, ribs, skewered shrimp, beans, rice & salad</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="fm-cat">
-      <div class="fm-cat-title">Especiales de Fajitas</div>
-      <div class="fm-items">
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Fajita Oaxacaqueña</div>
-            <div class="fm-item-desc">Served with white rice, poblano peppers and topped with Oaxaca cheese</div>
-          </div>
-          <div class="fm-item-price">$16.99 / $31.99</div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Fajita Supreme Mix — For 2</div>
-            <div class="fm-item-desc">Beef, chicken, shrimp, carnitas, Mexican chorizo, ribs</div>
-          </div>
-          <div class="fm-item-price">$35.99</div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Fajita Cielo, Mar & Tierra</div>
-            <div class="fm-item-desc">Poblano peppers, ¼ roasted chicken, chorizo, ribs, beef ribs & shrimp</div>
-          </div>
-          <div class="fm-item-price">$16.99 / $32.99</div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Fajita de Costilla de Puerco en Salsa Verde</div>
-            <div class="fm-item-desc">Pork rib fajita in green sauce</div>
-          </div>
-          <div class="fm-item-price">$14.99 / $24.99</div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Ribeye en Fajitas — 14oz</div>
-          </div>
+          <div class="fm-item-price">$16.00</div>
         </div>
       </div>
     </div>
@@ -1340,68 +1209,57 @@ footer{
   <!-- PLATES -->
   <div class="fm-panel" id="fm-plates">
     <div class="fm-cat">
-      <div class="fm-cat-title">Chilangos Plates</div>
+      <div class="fm-cat-title">Chilangos Plates (Asada / Beef)</div>
       <div class="fm-items">
         <div class="fm-item">
           <div class="fm-item-info">
-            <div class="fm-item-name">12oz Ribeye</div>
-            <div class="fm-item-desc">Served with salad, beans & rice</div>
+            <div class="fm-item-name">Ribeye</div>
+            <div class="fm-item-desc">Served with salad, beans &amp; rice</div>
           </div>
+          <div class="fm-item-price">$24.00</div>
         </div>
         <div class="fm-item">
           <div class="fm-item-info">
-            <div class="fm-item-name">Bistek con Camarón</div>
-            <div class="fm-item-desc">Grilled beef with skewered shrimp served with beans, rice & salad</div>
+            <div class="fm-item-name">Bistek con Camaron</div>
+            <div class="fm-item-desc">Grilled beef with skewered shrimp, beans, rice &amp; salad</div>
           </div>
+          <div class="fm-item-price">$20.00</div>
         </div>
         <div class="fm-item">
           <div class="fm-item-info">
             <div class="fm-item-name">Costilla de Res</div>
-            <div class="fm-item-desc">Beef ribs served with salad, beans & rice</div>
+            <div class="fm-item-desc">Beef ribs with salad, beans &amp; rice</div>
           </div>
+          <div class="fm-item-price">$16.00</div>
         </div>
         <div class="fm-item">
           <div class="fm-item-info">
             <div class="fm-item-name">Bistek a la Mexicana</div>
-            <div class="fm-item-desc">Sliced beef, onion, tomatoes, peppers in ranchero hot sauce with beans, rice & salad</div>
+            <div class="fm-item-desc">Sliced beef with onion, tomatoes, peppers in ranchero sauce, beans, rice &amp; salad</div>
           </div>
+          <div class="fm-item-price">$16.00</div>
         </div>
         <div class="fm-item">
           <div class="fm-item-info">
             <div class="fm-item-name">Bistek con Chile Relleno</div>
-            <div class="fm-item-desc">Grilled steak with stuffed poblano peppers, served with salad, beans & rice</div>
+            <div class="fm-item-desc">Grilled steak with stuffed poblano pepper, served with salad, beans &amp; rice</div>
           </div>
+          <div class="fm-item-price">$20.00</div>
         </div>
         <div class="fm-item">
           <div class="fm-item-info">
             <div class="fm-item-name">Carne Asada</div>
-            <div class="fm-item-desc">Grilled steak served with salad, beans & rice</div>
+            <div class="fm-item-desc">Grilled steak with salad, beans &amp; rice</div>
           </div>
+          <div class="fm-item-price">$16.00</div>
         </div>
         <div class="fm-item">
           <div class="fm-item-info">
-            <div class="fm-item-name">Molcajete</div>
-            <div class="fm-item-desc">Chicken, pork, beef, sausage, shrimp, cheese, nopales, cambray, topped with tomatillo sauce. Served in volcanic stone. With rice, beans & salad</div>
+            <div class="fm-item-name">Alambre</div>
+            <div class="fm-item-desc">Beef, pork, ham, bell peppers, onions, pineapple, cheese, beans, salad &amp; tortillas</div>
           </div>
+          <div class="fm-item-price">$16.00</div>
         </div>
-      </div>
-    </div>
-    <div class="fm-cat">
-      <div class="fm-cat-title">Carnes</div>
-      <div class="fm-items">
-        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Costilla de Res</div><div class="fm-item-desc">Short beef ribs</div></div></div>
-        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Ribeye 14oz</div></div></div>
-        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Bistec con Chile Relleno</div><div class="fm-item-desc">Beef steak with stuffed poblano peppers</div></div></div>
-        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Bistec Encebollado con Champiñones</div><div class="fm-item-desc">Skirt steak with sautéed onions and mushrooms</div></div></div>
-        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Chuleta de Cerdo Ahumada</div><div class="fm-item-desc">2 smoked pork chops</div></div></div>
-        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Bistec con Rajas Poblanas & Crema</div><div class="fm-item-desc">Skirt steak with poblano peppers</div></div></div>
-        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Cena Campesina</div><div class="fm-item-desc">Grilled steak with 2 eggs, plantain, avocado, fresh cheese & butter</div></div></div>
-        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Milanesa de Res</div><div class="fm-item-desc">Breaded beef plate</div></div></div>
-        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Bistek con Chilaquiles</div><div class="fm-item-desc">Steak with chilaquiles topped with crema & queso</div></div></div>
-        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Plato de Alambres</div><div class="fm-item-desc">Sliced beef, pork, bacon, grilled onions, bell peppers, grilled pineapple covered with asadero cheese</div></div></div>
-        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Plato de Carnitas</div><div class="fm-item-desc">Served with rice, beans & salad</div></div></div>
-        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Carne Asada</div></div></div>
-        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Huarache Chilangos</div></div></div>
       </div>
     </div>
     <div class="fm-cat">
@@ -1410,38 +1268,37 @@ footer{
         <div class="fm-item">
           <div class="fm-item-info">
             <div class="fm-item-name">Milanesa de Pollo o Res</div>
-            <div class="fm-item-desc">Fried breaded chicken or beef with salad, beans & rice</div>
+            <div class="fm-item-desc">Fried breaded chicken (or beef) with salad, beans &amp; rice</div>
           </div>
+          <div class="fm-item-price">$13.00</div>
         </div>
         <div class="fm-item">
           <div class="fm-item-info">
             <div class="fm-item-name">Flautas de Pollo</div>
-            <div class="fm-item-desc">3 large rolled chicken-filled corn tortillas, fried with mozzarella cheese, served with salad & rice</div>
+            <div class="fm-item-desc">3 large rolled chicken-filled corn tortillas, fried with mozzarella cheese, served with salad &amp; rice</div>
           </div>
+          <div class="fm-item-price">$13.00</div>
         </div>
         <div class="fm-item">
           <div class="fm-item-info">
             <div class="fm-item-name">Enchiladas de Pollo</div>
-            <div class="fm-item-desc">3 enchiladas filled with chicken, topped with green tomatillo sauce, salad & rice</div>
+            <div class="fm-item-desc">3 enchiladas filled with chicken, topped with green tomatillo sauce, salad &amp; rice</div>
           </div>
+          <div class="fm-item-price">$13.00</div>
         </div>
         <div class="fm-item">
           <div class="fm-item-info">
             <div class="fm-item-name">Pollo a la Plancha</div>
-            <div class="fm-item-desc">Grilled chicken breast served with salad, beans & rice</div>
+            <div class="fm-item-desc">Grilled chicken breast served with salad, beans, rice</div>
           </div>
+          <div class="fm-item-price">$13.00</div>
         </div>
         <div class="fm-item">
           <div class="fm-item-info">
             <div class="fm-item-name">Pollo Asado</div>
-            <div class="fm-item-desc">Roasted chicken served with french fries, salad, beans & rice</div>
+            <div class="fm-item-desc">Roasted chicken served with french fries, salad, beans &amp; rice</div>
           </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Milanesa de Pollo</div>
-            <div class="fm-item-desc">Served with rice, beans & salad</div>
-          </div>
+          <div class="fm-item-price">$13.00</div>
         </div>
       </div>
     </div>
@@ -1450,138 +1307,105 @@ footer{
       <div class="fm-items">
         <div class="fm-item">
           <div class="fm-item-info">
+            <div class="fm-item-name">Chuleta de Cerdo</div>
+          </div>
+          <div class="fm-item-price">$16.00</div>
+        </div>
+        <div class="fm-item">
+          <div class="fm-item-info">
             <div class="fm-item-name">Carnitas en Rajas</div>
-            <div class="fm-item-desc">Pork carnitas (pulled pork) served with salad, beans & rice</div>
+            <div class="fm-item-desc">Pork carnitas served with salad, beans &amp; rice</div>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="fm-cat">
-      <div class="fm-cat-title">A La Brasa</div>
-      <div class="fm-items">
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Pollo a la Brasa</div>
-            <div class="fm-item-desc">Served with rice, beans, french fries or mature plantain</div>
-          </div>
-          <div class="fm-item-price">½ $10.99 / Whole $17.99</div>
+          <div class="fm-item-price">$16.00</div>
         </div>
         <div class="fm-item">
           <div class="fm-item-info">
-            <div class="fm-item-name">Costillas de Puerco</div>
-            <div class="fm-item-desc">Served with rice, beans, french fries & salad</div>
+            <div class="fm-item-name">Molcajete</div>
+            <div class="fm-item-desc">Traditional Mexican dish (served in volcanic stone) with chicken, pork, beef, sausage, shrimp, cheese, nopales, cambray, topped with tomatillo sauce, served with rice, beans, salad &amp; tortillas</div>
           </div>
-          <div class="fm-item-price">½ $10.99 / Whole $19.99</div>
-        </div>
-      </div>
-    </div>
-    <div class="fm-cat">
-      <div class="fm-cat-title">Fried Plates</div>
-      <div class="fm-items">
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Camarones Fritos</div>
-            <div class="fm-item-desc">8 fried shrimp served with rice, potato salad, french fries, fried plantains & tartar sauce</div>
-          </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Filete de Pescado Frito — Tilapia</div>
-            <div class="fm-item-desc">Fried fish filet with potato salad, white rice, beans, french fries, fried plantains & tartar sauce</div>
-          </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Mojarra Entera Empanizada</div>
-            <div class="fm-item-desc">Whole fried tilapia with white rice, french fries, fried plantain & tartar sauce</div>
-          </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Chilango Super Combo</div>
-            <div class="fm-item-desc">Fried tilapia filet and 3 jumbo shrimp with salad, white rice, french fries & plantains</div>
-          </div>
+          <div class="fm-item-price">$25.00</div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- MARISCOS -->
-  <div class="fm-panel" id="fm-mariscos">
+  <!-- SEAFOOD -->
+  <div class="fm-panel" id="fm-seafood">
     <div class="fm-cat">
-      <div class="fm-cat-title">Mariscos</div>
+      <div class="fm-cat-title">Pescado (Seafood)</div>
       <div class="fm-items">
         <div class="fm-item">
           <div class="fm-item-info">
-            <div class="fm-item-name">Pinchos de Camarones</div>
-            <div class="fm-item-desc">Grilled shrimp shish kabob</div>
+            <div class="fm-item-name">Camarones Empanizados</div>
+            <div class="fm-item-desc">Fried shrimp served with french fries, rice &amp; salad</div>
           </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Vuelve a la Vida / Back to Life</div>
-            <div class="fm-item-desc">Tilapia ceviche, oysters, fresh shrimp, octopus in house cocktail sauce with cilantro, onions & fresh avocado</div>
-          </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Cocktail de Camarón</div>
-            <div class="fm-item-desc">8 giant shrimp in house cocktail sauce with cilantro, onions & fresh avocado</div>
-          </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">2 Tostadas de Ceviche</div>
-            <div class="fm-item-desc">Ceviche on tostada with pico de gallo & fresh avocado</div>
-          </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Dos Tostadas de Camarón</div>
-            <div class="fm-item-desc">Shrimp tostadas served with pico de gallo & fresh avocado</div>
-          </div>
+          <div class="fm-item-price">$18.00</div>
         </div>
         <div class="fm-item">
           <div class="fm-item-info">
             <div class="fm-item-name">Camarones a la Diabla</div>
-            <div class="fm-item-desc">Shrimp in hot chipotle sauce served with beans, rice & salad</div>
+            <div class="fm-item-desc">Shrimp in hot chipotle sauce served with beans, rice &amp; salad</div>
           </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Bistek Chilango con Camarones</div>
-            <div class="fm-item-desc">Grilled skirt steak with guacamole</div>
-          </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Filete de Pescado a la Parrilla</div>
-            <div class="fm-item-desc">Grilled fish filet</div>
-          </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Camarones Empanizados</div>
-            <div class="fm-item-desc">Fried shrimp served with french fries, rice & salad</div>
-          </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Mojarra Frita</div>
-            <div class="fm-item-desc">Whole fried tilapia served with french fries, rice & salad</div>
-          </div>
+          <div class="fm-item-price">$18.00</div>
         </div>
         <div class="fm-item">
           <div class="fm-item-info">
             <div class="fm-item-name">Filete de Pescado</div>
-            <div class="fm-item-desc">Breaded tilapia filet served with french fries, rice & salad</div>
+            <div class="fm-item-desc">Breaded tilapia filet served with french fries, rice &amp; salad</div>
           </div>
+          <div class="fm-item-price">$16.00</div>
+        </div>
+      </div>
+    </div>
+    <div class="fm-cat">
+      <div class="fm-cat-title">Seafood / Other Plates</div>
+      <div class="fm-items">
+        <div class="fm-item">
+          <div class="fm-item-info">
+            <div class="fm-item-name">Mojarra Frita</div>
+            <div class="fm-item-desc">Whole fried tilapia served with french fries, rice &amp; salad</div>
+          </div>
+          <div class="fm-item-price">$16.00</div>
         </div>
         <div class="fm-item">
           <div class="fm-item-info">
-            <div class="fm-item-name">Arroz de Marisco — Paella Chilango</div>
-            <div class="fm-item-desc">Crab, fish, shrimp, oyster, octopus, mussels — no modifications. Please allow 10–15 minutes</div>
+            <div class="fm-item-name">Vuelve a la Vida / Back to Life</div>
+            <div class="fm-item-desc">Ceviche, octopus, oyster &amp; shrimp in cocktail sauce, cilantro &amp; onions</div>
           </div>
+          <div class="fm-item-price">$16.00</div>
+        </div>
+        <div class="fm-item">
+          <div class="fm-item-info">
+            <div class="fm-item-name">Cocktail de Camaron</div>
+            <div class="fm-item-desc">Fresh cooked shrimp served in cocktail sauce &amp; sliced avocado</div>
+          </div>
+          <div class="fm-item-price">$14.00</div>
+        </div>
+        <div class="fm-item">
+          <div class="fm-item-info">
+            <div class="fm-item-name">Tostadas de Ceviche</div>
+            <div class="fm-item-desc">2 ceviche tostadas with pico de gallo &amp; avocado</div>
+          </div>
+          <div class="fm-item-price">$12.00</div>
+        </div>
+        <div class="fm-item">
+          <div class="fm-item-info">
+            <div class="fm-item-name">Orden de Tacos (Pescado o Camaron)</div>
+            <div class="fm-item-desc">Four soft fish or shrimp tacos on corn tortilla with cilantro &amp; onion</div>
+          </div>
+          <div class="fm-item-price">$12.00</div>
+        </div>
+        <div class="fm-item">
+          <div class="fm-item-info">
+            <div class="fm-item-name">Burrito Camaron</div>
+          </div>
+          <div class="fm-item-price">$14.00</div>
+        </div>
+        <div class="fm-item">
+          <div class="fm-item-info">
+            <div class="fm-item-name">Quesadilla Camaron</div>
+          </div>
+          <div class="fm-item-price">$14.00</div>
         </div>
       </div>
     </div>
@@ -1590,219 +1414,210 @@ footer{
   <!-- SOUPS -->
   <div class="fm-panel" id="fm-soups">
     <div class="fm-cat">
-      <div class="fm-cat-title">Soup Caldos</div>
+      <div class="fm-cat-title">Soups</div>
       <div class="fm-items">
         <div class="fm-item">
           <div class="fm-item-info">
-            <div class="fm-item-name">Caldo de Costilla de Res</div>
-            <div class="fm-item-desc">Beef soup served with vegetables, white rice, cilantro & corn tortillas</div>
-          </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Caldo de Mole de Hoja de Costilla de Res</div>
-            <div class="fm-item-desc">Traditional mole soup with vegetables, pancilla chiles and corn tortilla</div>
-          </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Caldo de Pollo Calapeño</div>
-            <div class="fm-item-desc">Jalapeño chicken soup with vegetables, white rice, and corn tortilla</div>
-          </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Famoso Caldo de Mariscos</div>
-            <div class="fm-item-desc">Our famous seafood soup with crab, shrimp, clams & fish in chipotle sauce with white rice & corn tortilla</div>
-          </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Sopa de Marisco con Crema de Coco</div>
-            <div class="fm-item-desc">Seafood soup with coconut cream</div>
-          </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
             <div class="fm-item-name">Caldo de Res</div>
-            <div class="fm-item-desc">Beef soup served with vegetables, rice, cilantro & corn tortillas</div>
+            <div class="fm-item-desc">Beef soup with vegetables, rice, cilantro &amp; corn tortillas</div>
           </div>
+          <div class="fm-item-price">$16.00</div>
         </div>
         <div class="fm-item">
           <div class="fm-item-info">
             <div class="fm-item-name">Caldo de Mariscos</div>
-            <div class="fm-item-desc">Seafood soup in chipotle sauce</div>
+            <div class="fm-item-desc">Seafood soup with chipotle sauce &amp; rice</div>
           </div>
+          <div class="fm-item-price">$18.00</div>
         </div>
-      </div>
-    </div>
-    <div class="fm-cat">
-      <div class="fm-cat-title">Auténtica Barbacoa</div>
-      <div class="fm-items">
         <div class="fm-item">
           <div class="fm-item-info">
-            <div class="fm-item-name">Auténtica Barbacoa de Borrego Chilangos</div>
-            <div class="fm-item-desc">16oz hand shank lamb with consomé and cactus salad</div>
+            <div class="fm-item-name">Sopa de Mariscos con Coco</div>
+            <div class="fm-item-desc">Seafood soup with coconut cream &amp; rice</div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- WEEKEND & BREAKFAST -->
-  <div class="fm-panel" id="fm-specials">
-    <div class="fm-cat">
-      <div class="fm-cat-title">Fin de Semana — Weekend Specials</div>
-      <div class="fm-items">
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Pozole Rojo de Carne de Puerco</div>
-            <div class="fm-item-desc">Red hominy soup with pozole grains, accompanied with chicken tostada tinga style</div>
-          </div>
+          <div class="fm-item-price">$20.00</div>
         </div>
         <div class="fm-item">
           <div class="fm-item-info">
             <div class="fm-item-name">Menudo</div>
-            <div class="fm-item-desc">Traditional Mexican tripe soup</div>
+            <div class="fm-item-desc">Beef tripe soup</div>
           </div>
+          <div class="fm-item-price">$14.00</div>
         </div>
       </div>
     </div>
     <div class="fm-cat">
-      <div class="fm-cat-title">Breakfast</div>
+      <div class="fm-cat-title">Weekend Special</div>
       <div class="fm-items">
         <div class="fm-item">
           <div class="fm-item-info">
-            <div class="fm-item-name">Huevos Rancheros</div>
-            <div class="fm-item-desc">Two eggs on two tostadas topped with ranchero sauce and beans</div>
+            <div class="fm-item-name">Barbacoa de Borrego</div>
+            <div class="fm-item-desc">Lamb shank with consome &amp; cactus salad</div>
           </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Huevos a la Mexicana</div>
-            <div class="fm-item-desc">Scrambled eggs with tomatoes, onions and pepper, beans & tortillas</div>
-          </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Chilaquiles con Bistek</div>
-            <div class="fm-item-desc">Fried tortillas topped with tomatillo sauce, cheese, egg on top, toasted bread & beans</div>
-          </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Huevos Rancheros con Bistek</div>
-            <div class="fm-item-desc">Two eggs on two tostadas topped with ranchero sauce, beans, avocado & fresh cheese</div>
-          </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Cena Campesina</div>
-            <div class="fm-item-desc">Grilled steak with 2 eggs, plantains, fresh cheese & avocado</div>
-          </div>
+          <div class="fm-item-price">$22.00</div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- TACO TUESDAY -->
-  <div class="fm-panel" id="fm-tuesday">
+  <!-- LUNCH -->
+  <div class="fm-panel" id="fm-lunch">
     <div class="fm-cat">
-      <div class="fm-cat-title">Taco Tuesday — Every Tuesday</div>
-      <div class="fm-tuesday">
-        <div class="fm-tuesday-card">
-          <div class="t-name">Pastor</div>
-          <div class="t-desc">Roasted pork</div>
-          <div class="t-price">$1.50</div>
+      <div class="fm-cat-title">Taco Plates</div>
+      <div class="fm-items">
+        <div class="fm-item">
+          <div class="fm-item-info">
+            <div class="fm-item-name">Orden de Tacos (5)</div>
+            <div class="fm-item-desc">Five soft tacos on corn tortilla with cilantro &amp; onion (pollo, pastor, carnitas, chicharron, barbacoa, chorizo)</div>
+          </div>
+          <div class="fm-item-price">$12.00</div>
         </div>
-        <div class="fm-tuesday-card">
-          <div class="t-name">Pollo</div>
-          <div class="t-desc">Shredded chicken</div>
-          <div class="t-price">$1.50</div>
+        <div class="fm-item">
+          <div class="fm-item-info">
+            <div class="fm-item-name">Orden de Tacos (4)</div>
+            <div class="fm-item-desc">Four soft tacos on corn tortilla (asada, birria, lengua, tripa)</div>
+          </div>
+          <div class="fm-item-price">$12.00</div>
         </div>
-        <div class="fm-tuesday-card">
-          <div class="t-name">Carnitas</div>
-          <div class="t-desc">Fried pork</div>
-          <div class="t-price">$1.50</div>
+        <div class="fm-item">
+          <div class="fm-item-info">
+            <div class="fm-item-name">Tacos Ribeye</div>
+            <div class="fm-item-desc">Soft tacos with avocado, cheese, cilantro &amp; onion, rice &amp; beans</div>
+          </div>
+          <div class="fm-item-price">$24.00</div>
         </div>
-        <div class="fm-tuesday-card">
-          <div class="t-name">Chicharrón</div>
-          <div class="t-desc">Crackling</div>
-          <div class="t-price">$1.50</div>
+        <div class="fm-item">
+          <div class="fm-item-info">
+            <div class="fm-item-name">Tacos Birria Chilangos</div>
+            <div class="fm-item-desc">Three brisket tacos with cheese, birria sauce, cilantro &amp; onion</div>
+          </div>
+          <div class="fm-item-price">$12.00</div>
         </div>
-        <div class="fm-tuesday-card">
-          <div class="t-name">Barbacoa</div>
-          <div class="t-desc">Beef cheek</div>
-          <div class="t-price">$1.50</div>
+        <div class="fm-item">
+          <div class="fm-item-info">
+            <div class="fm-item-name">Taco Combo</div>
+            <div class="fm-item-desc">3 tacos, rice &amp; beans</div>
+          </div>
+          <div class="fm-item-price">$12.00</div>
         </div>
-        <div class="fm-tuesday-card">
-          <div class="t-name">Chorizo</div>
-          <div class="t-desc">Pork sausage</div>
-          <div class="t-price">$1.50</div>
+        <div class="fm-item">
+          <div class="fm-item-info">
+            <div class="fm-item-name">Tacos Vegetarianos</div>
+            <div class="fm-item-desc">Includes beans and Mexican rice, 3 tacos with sauteed onions &amp; peppers</div>
+          </div>
+          <div class="fm-item-price">$10.00</div>
+        </div>
+        <div class="fm-item">
+          <div class="fm-item-info">
+            <div class="fm-item-name">Tacos Individuales (Each)</div>
+            <div class="fm-item-desc">Meat choices: pastor, pollo, carnitas, birria, chicharron, barbacoa, chorizo</div>
+          </div>
+          <div class="fm-item-price">$3.00</div>
         </div>
       </div>
-      <p style="text-align:center;margin-top:24px;font-size:.8rem;color:rgba(245,237,214,.35);font-style:italic;">Every Tuesday · Corn tortilla · With onions & cilantro</p>
+    </div>
+    <div class="fm-cat">
+      <div class="fm-cat-title">Antojitos</div>
+      <div class="fm-items">
+        <div class="fm-item">
+          <div class="fm-item-info">
+            <div class="fm-item-name">Sopes</div>
+            <div class="fm-item-desc">Two corn doughs with choice of meat, beans, lettuce, sour cream, avocado, cheese &amp; pico de gallo</div>
+          </div>
+          <div class="fm-item-price">$12.00</div>
+        </div>
+        <div class="fm-item">
+          <div class="fm-item-info">
+            <div class="fm-item-name">Burrito</div>
+            <div class="fm-item-desc">Flour tortilla with meat, beans, rice, pico de gallo, sour cream, topped with cheese sauce</div>
+          </div>
+          <div class="fm-item-price">$12.00</div>
+        </div>
+        <div class="fm-item">
+          <div class="fm-item-info">
+            <div class="fm-item-name">Quesadilla</div>
+            <div class="fm-item-desc">Flour tortilla with mozzarella cheese, meat, rice, pico de gallo &amp; lettuce</div>
+          </div>
+          <div class="fm-item-price">$12.00</div>
+        </div>
+        <div class="fm-item">
+          <div class="fm-item-info">
+            <div class="fm-item-name">Huarache Chilangos</div>
+            <div class="fm-item-desc">Fried corn dough with grilled beef, green tomatillo sauce, beans, cilantro, onions &amp; two eggs</div>
+          </div>
+          <div class="fm-item-price">$16.00</div>
+        </div>
+        <div class="fm-item">
+          <div class="fm-item-info">
+            <div class="fm-item-name">Tostadas</div>
+            <div class="fm-item-desc">Two crispy shells with meat, lettuce, guacamole &amp; pico de gallo</div>
+          </div>
+          <div class="fm-item-price">$12.00</div>
+        </div>
+      </div>
+    </div>
+    <div class="fm-cat">
+      <div class="fm-cat-title">Tortas &amp; More</div>
+      <div class="fm-items">
+        <div class="fm-item">
+          <div class="fm-item-info">
+            <div class="fm-item-name">Torta Mexicana</div>
+            <div class="fm-item-desc">Mexican sub with meat, beans, lettuce, avocado, cheese &amp; pico de gallo</div>
+          </div>
+          <div class="fm-item-price">$12.00</div>
+        </div>
+        <div class="fm-item">
+          <div class="fm-item-info">
+            <div class="fm-item-name">Torta Cubana</div>
+            <div class="fm-item-desc">Cuban sub with beans, wiener, cheese, breaded beef &amp; avocado</div>
+          </div>
+          <div class="fm-item-price">$14.00</div>
+        </div>
+        <div class="fm-item">
+          <div class="fm-item-info">
+            <div class="fm-item-name">Torta Hawaiana</div>
+            <div class="fm-item-desc">Ham, pineapple, mozzarella, lettuce, pico de gallo &amp; avocado</div>
+          </div>
+          <div class="fm-item-price">$12.00</div>
+        </div>
+        <div class="fm-item">
+          <div class="fm-item-info">
+            <div class="fm-item-name">Gringas</div>
+            <div class="fm-item-desc">Flour tortilla with meat, cilantro, onions &amp; mozzarella</div>
+          </div>
+          <div class="fm-item-price">$10.00</div>
+        </div>
+        <div class="fm-item">
+          <div class="fm-item-info">
+            <div class="fm-item-name">Hamburguesa Mexicana</div>
+            <div class="fm-item-desc">Beef patty with mozzarella, lettuce, tomato, onions &amp; pineapple, served with fries</div>
+          </div>
+          <div class="fm-item-price">$12.00</div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <!-- KIDS & SIDES -->
-  <div class="fm-panel" id="fm-kids">
+  <!-- EXTRAS -->
+  <div class="fm-panel" id="fm-extras">
     <div class="fm-cat">
-      <div class="fm-cat-title">Platos Para Niños — Kids Menu</div>
+      <div class="fm-cat-title">Extras</div>
       <div class="fm-items">
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Celeste Chicken Nuggets</div>
-            <div class="fm-item-desc">Chicken nuggets served with french fries</div>
-          </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Sincronizadas</div>
-            <div class="fm-item-desc">Ham & cheese sandwich served with french fries, white rice & beans</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="fm-cat">
-      <div class="fm-cat-title">Sides</div>
-      <div class="fm-items">
-        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Arroz Mexicano</div></div></div>
-        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Frijoles Negros</div></div></div>
-        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Papas Fritas de Casa</div></div></div>
-        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Arroz Blanco</div></div></div>
-        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Frijoles Charros</div></div></div>
-        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Maduros</div><div class="fm-item-desc">Fried sweet plantains</div></div></div>
-        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Frijoles Refritos</div></div></div>
-        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Ensalada de Papas</div></div></div>
-        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Vegetales</div></div></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- DESSERTS -->
-  <div class="fm-panel" id="fm-desserts">
-    <div class="fm-cat">
-      <div class="fm-cat-title">Postres — Desserts</div>
-      <div class="fm-items">
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Flan de Cajeta</div>
-            <div class="fm-item-desc">Classic Mexican caramel flan with cajeta (goat milk caramel)</div>
-          </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Arroz con Leche</div>
-            <div class="fm-item-desc">Rice pudding</div>
-          </div>
-        </div>
-        <div class="fm-item">
-          <div class="fm-item-info">
-            <div class="fm-item-name">Fresas con Crema</div>
-            <div class="fm-item-desc">Strawberries with sweet cream</div>
-          </div>
-        </div>
+        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Arroz</div></div><div class="fm-item-price">$3.00</div></div>
+        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Aguacate</div></div><div class="fm-item-price">$3.50</div></div>
+        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Queso</div></div><div class="fm-item-price">$3.00</div></div>
+        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Camarones</div></div><div class="fm-item-price">$2.00</div></div>
+        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Cebolla cambray</div></div><div class="fm-item-price">$3.00</div></div>
+        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Frijoles</div></div><div class="fm-item-price">$3.00</div></div>
+        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Maduros</div></div><div class="fm-item-price">$3.00</div></div>
+        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Guacamole</div></div><div class="fm-item-price">$4.00</div></div>
+        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Sour cream</div></div><div class="fm-item-price">$1.50</div></div>
+        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Papas fritas</div></div><div class="fm-item-price">$4.00</div></div>
+        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Nopales</div></div><div class="fm-item-price">$3.00</div></div>
+        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Cebolla asada</div></div><div class="fm-item-price">$3.00</div></div>
+        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Pico de gallo</div></div><div class="fm-item-price">$2.00</div></div>
+        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Jalapenos toreados</div></div><div class="fm-item-price">$3.00</div></div>
+        <div class="fm-item"><div class="fm-item-info"><div class="fm-item-name">Lechuga</div></div><div class="fm-item-price">$3.00</div></div>
       </div>
     </div>
   </div>
@@ -1821,8 +1636,8 @@ function fmTab(id, btn) {
 <!-- ═══════════ QUOTE DIVIDER ═══════════ -->
 <div class="quote-divider">
   <blockquote>
-    "Cooking is our way of saying —<br>
-    <span>bienvenidos a la familia.</span>"
+    "We take tradition and<br>
+    <span>make it unforgettable.</span>"
   </blockquote>
   <div class="quote-attr">— The Chilangos Family · Kenner, Louisiana</div>
 </div>
@@ -1847,31 +1662,31 @@ function fmTab(id, btn) {
     <div class="hours-grid">
       <div class="hours-row">
         <span class="hours-day">Monday</span>
-        <span class="hours-time">10:00 AM – 9:00 PM</span>
+        <span class="hours-time">Closed</span>
       </div>
       <div class="hours-row">
         <span class="hours-day">Tuesday</span>
-        <span class="hours-time">10:00 AM – 9:00 PM</span>
-      </div>
-      <div class="hours-row">
-        <span class="hours-day">Wednesday</span>
-        <span class="hours-time">10:00 AM – 9:00 PM</span>
-      </div>
-      <div class="hours-row today">
-        <span class="hours-day">Thursday ← Today</span>
-        <span class="hours-time">10:00 AM – 9:00 PM</span>
-      </div>
-      <div class="hours-row">
-        <span class="hours-day">Friday</span>
         <span class="hours-time">10:00 AM – 10:00 PM</span>
       </div>
       <div class="hours-row">
+        <span class="hours-day">Wednesday</span>
+        <span class="hours-time">10:00 AM – 8:00 PM</span>
+      </div>
+      <div class="hours-row today">
+        <span class="hours-day">Thursday ← Today</span>
+        <span class="hours-time">10:00 AM – 10:00 PM</span>
+      </div>
+      <div class="hours-row">
+        <span class="hours-day">Friday</span>
+        <span class="hours-time">10:00 AM – 12:00 AM</span>
+      </div>
+      <div class="hours-row">
         <span class="hours-day">Saturday</span>
-        <span class="hours-time">9:00 AM – 10:00 PM</span>
+        <span class="hours-time">10:00 AM – 12:00 AM</span>
       </div>
       <div class="hours-row">
         <span class="hours-day">Sunday</span>
-        <span class="hours-time">9:00 AM – 8:00 PM</span>
+        <span class="hours-time">10:00 AM – 10:00 PM</span>
       </div>
     </div>
     <div class="contact-bar">
@@ -1919,14 +1734,14 @@ function fmTab(id, btn) {
     </div>
     <p>Authentic Mexican Cuisine in the heart of Kenner, Louisiana. Come for the tacos, stay for the family.</p>
     <div class="footer-social">
-      <a href="#" class="soc-btn" title="Instagram">
+      <a href="https://www.instagram.com/chilangosnola/" target="_blank" class="soc-btn" title="Instagram">
         <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
       </a>
-      <a href="#" class="soc-btn" title="Facebook">
+      <a href="https://www.facebook.com/chilangosnola/" target="_blank" class="soc-btn" title="Facebook">
         <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
       </a>
-      <a href="#" class="soc-btn" title="Facebook">
-        <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      <a href="tel:+15044695599" class="soc-btn" title="Call Us">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.58 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l1.38-1.38a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
       </a>
     </div>
   </div>
@@ -1983,20 +1798,8 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.08 });
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-// Remove the old preview menu block and keep all full-menu prices as placeholders.
+// Remove the old preview menu block. Full menu prices stay editable in the HTML.
 document.getElementById('menu')?.remove();
-document.querySelectorAll('#full-menu .fm-item').forEach(item => {
-  let price = item.querySelector('.fm-item-price');
-  if (!price) {
-    price = document.createElement('div');
-    price.className = 'fm-item-price';
-    item.appendChild(price);
-  }
-  price.textContent = '$XX';
-});
-document.querySelectorAll('#full-menu .t-price').forEach(price => {
-  price.textContent = '$XX';
-});
 
 // ── Highlight today's hours dynamically
 const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
@@ -2013,3 +1816,4 @@ document.querySelectorAll('.hours-day').forEach(el => {
 </script>
 </body>
 </html>
+
